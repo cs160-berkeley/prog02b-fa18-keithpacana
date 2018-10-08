@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8AA2"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="565dp"
+        android:layout_height="297dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vote2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="378dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:text="REPRESENT!"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="65sp"
+        app:fontFamily="@font/orienta"
+        app:layout_constraintBottom_toTopOf="@+id/zipcode_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/zipcode"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="293dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@drawable/abc"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="zipcode"
+        android:inputType="number"
+        android:singleLine="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#cccccc"
+        app:layout_constraintBottom_toTopOf="@+id/getinformedbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/zipcode_textView"
+        android:layout_width="314dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Please enter your zipcode"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/zipcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getinformedbutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="293dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:radius="1dp"
+        android:text="Get Informed!"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/currbutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="293dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="208dp"
+        android:background="#00BAE2"
+        android:text="Randomize Location"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="293dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="#6ed3f9"
+        android:text="Use my current location"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/currbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="------OR-------"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/arimo_bold_italic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
